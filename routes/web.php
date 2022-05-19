@@ -22,5 +22,7 @@ Route::get('/testimonial', function () {
         ["name"=>"Abhi","age"=>23],
         ["name"=>"Chap", "age"=>45]
     ];
-    return view('testimonial',['users' =>$users]);
+
+    $contact =request('contact');
+    return view('testimonial',['users' =>$users,'contact'=>$contact]);
 });
