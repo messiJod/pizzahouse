@@ -3,7 +3,7 @@
 
 @section('testimonial')
     <title>Testimonial Page</title>
-    <link rel="icon" type="image/x-icon" href="/public/logo.ico">
+{{--    <link rel="icon" type="image/x-icon" href="/public/favicon.png">--}}
 <div class="min-h-screen flex justify-center flex-col items-center bg-gray-800">
     <div class="bg-yellow-400 p-5 text-5xl rounded-md">This is the Testimonial page.</div>
     <div class="text-white">{{$contact}}</div>
