@@ -17,12 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/testimonial', function () {
-    $users =[
-        ["name"=>"Abhi","age"=>23],
-        ["name"=>"Chap", "age"=>45]
-    ];
+Route::get('/testimonial', [\App\Http\Controllers\PizzaController::class,'index']);
 
-    $contact =request('contact');
-    return view('testimonial',['users' =>$users,'contact'=>$contact]);
-});
+Route::get('/testimonial/{id}', [\App\Http\Controllers\PizzaController::class,'show']);

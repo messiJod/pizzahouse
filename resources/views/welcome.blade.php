@@ -20,10 +20,10 @@
 {{--            @endif--}}
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div class="flex flex-col justify-center pt-8 sm:justify-start sm:pt-0">
+        <div class="flex flex-col justify-center pt-8 sm:justify-start sm:pt-0 text-center">
             <div class="text-white text-5xl my-5">Welcome to the Home Page</div>
-           <div class="bg-white mx-auto text-lg p-6 hover:rounded-2xl transition-all ">
-               <a href="{{url('/testimonial')}}" class="">Testimonial Page</a>
+           <div class="my-2">
+               <a href="{{url('/testimonial')}}" class="bg-white inline-block mx-auto text-lg p-6 hover:rounded-2xl hover:bg-red-600 hover:text-white transition-all ">Testimonial Page</a>
            </div>
         </div>
 {{--        <div class="absolute bottom-10 right-10 max-w-5xl text-white bg-gray-700 px-5 py-2">This is made with LARAVEL.</div>--}}
