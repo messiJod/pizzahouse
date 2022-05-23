@@ -3,17 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\pizza;
 
 class PizzaController extends Controller
 {
     public function index(){
-        $users =[
-            ["name"=>"Abhi","age"=>23],
-            ["name"=>"Chap", "age"=>45]
-        ];
+//        $users = pizza::all();
 
-        $contact =request('contact');
-        return view('testimonial',['users' =>$users,'contact'=>$contact]);
+        $users = pizza::orderBy("type","desc")->get();
+        return view('testimonial',['users' =>$users]);
     }
 
     public function show($id){

@@ -13,7 +13,7 @@ class CreatePizzaTable extends Migration
      */
     public function up()
     {
-        Schema::create('pizza', function (Blueprint $table) {
+        Schema::create('pizzas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('type');
@@ -29,6 +29,6 @@ class CreatePizzaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pizza');
+        Schema::dropIfExists('pizzas');
     }
 }

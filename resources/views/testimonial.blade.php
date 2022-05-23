@@ -6,7 +6,7 @@
 {{--    <link rel="icon" type="image/x-icon" href="/public/favicon.png">--}}
 <div class="min-h-screen flex justify-center flex-col items-center bg-gray-800">
     <div class="bg-yellow-400 p-5 text-5xl rounded-md">This is the Testimonial page.</div>
-    <div class="text-white">{{$contact}}</div>
+{{--    <div class="text-white">{{$contact}}</div>--}}
     <div class="my-5">
         <a href="{{url("./")}}" class =" bg-yellow-400 px-5 py-2 rounded-sm hover:text-yellow-400 hover:bg-black transition-all text-3xl">HOME</a>
     </div>
@@ -22,9 +22,9 @@
 {{--        <p class="text-white text-3xl">{{$users[$i]['name']}}</p>--}}
 {{--    @endfor--}}
 
-
+        <div class="text-4xl text-white">Name - Type</div>
         @foreach($users as $user)
-                <p class="text-white text-3xl bg-red-400 w-max text-center my-2 px-3 py-2"> {{$user['name']}} - {{$user['age']}}</p>
+                <p class="text-white text-3xl bg-red-400 w-max text-center my-2 px-3 py-2"> {{$user->name}} - {{$user->type}}</p>
         @endforeach
 
 </div>
