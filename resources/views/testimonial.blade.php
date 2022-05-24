@@ -22,10 +22,10 @@
 {{--        <p class="text-white text-3xl">{{$users[$i]['name']}}</p>--}}
 {{--    @endfor--}}
 
-        <div class="text-4xl text-white">Name - Type</div>
-        @foreach($users as $user)
-                <p class="text-white text-3xl bg-red-400 w-max text-center my-2 px-3 py-2"> {{$user->name}} - {{$user->type}}</p>
-        @endforeach
+{{--        <div class="text-4xl text-white">Name - Type</div>--}}
+{{--        @foreach($users as $user)--}}
+{{--                <p class="text-white text-3xl bg-red-400 w-max text-center my-2 px-3 py-2"> {{$user->name}} - {{$user->type}}</p>--}}
+{{--        @endforeach--}}
 
 </div>
 @endsection

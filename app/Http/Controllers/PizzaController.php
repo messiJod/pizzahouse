@@ -15,6 +15,7 @@ class PizzaController extends Controller
     }
 
     public function show($id){
-        return view('detail',['id'=>$id]);
+        $user = pizza::findOrFail($id);
+        return view('detail',['user'=>$user]);
     }
 }
