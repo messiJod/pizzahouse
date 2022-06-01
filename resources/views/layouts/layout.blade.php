@@ -13,7 +13,7 @@
     @yield('welcome')
     @yield('testimonial')
     @yield('detail')
-    <div class="absolute bottom-10 right-10 max-w-5xl text-white bg-gray-700 px-5 py-2">This is made with LARAVEL.</div>
+    <div class="absolute bottom-10 right-10 max-w-5xl text-white bg-gray-700 px-5 py-2">This is made with LARAVEL. &#128151;</div>
     <script src="{{asset('js/myscript.js')}}"></script>
 </body>
 </html>
